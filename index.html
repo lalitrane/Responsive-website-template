@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive template developed by Lalit Rane</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+</head>
+<body>
+
+<nav  class="navbar navbar-default" id="borderimg">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav" id="nav1">
+            <li class="active"><a href="index.html">Home</a></li>
+           
+                        <li><a href="gallery.html">Gallery</a></li>
+                           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Dropdown Menu 1</a></li>
+                <li><a href="#">Dropdown Menu 2</a></li>
+      
+             
+         
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+         
+          </ul>
+    
+    </div>
+  </div>
+</nav>
+   <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="assets/img/1.jpg" alt="">
+          <p class="caption">This is a caption</p>
+        </li>
+        <li>
+          <img src="assets/img/2.jpg" alt="">
+          <p class="caption">This is another caption</p>
+        </li>
+      
+      </ul>
+    </div>
+
+           
+        <!-- /.row -->
+     <div class="col-md-4 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="assets/img/thumb_1.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+             <div class="col-md-4 portfolio-item">
+                <a href="#">
+                   <img class="img-responsive" src="assets/img/thumb_2.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+
+
+             <div class="col-md-4 portfolio-item">
+                <a href="#">
+                   <img class="img-responsive" src="assets/img/thumb_3.png" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Name</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+               
+              
+                <p>&nbsp;</p>
+            </div>
+</div>
+<div class="footer_section2">
+  
+  Website designed & devloped by Lalit Rane
+</div>
+
+
+</body>
+</html>
